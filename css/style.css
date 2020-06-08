@@ -775,6 +775,7 @@ footer {
   padding: 10px 29px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  fill: #FFFFFF;
   border-radius: 4px;
   min-width: 200px;
   font-weight: 700;
@@ -787,23 +788,16 @@ footer {
 .btn-footer:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
+  fill: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.btn-footer::after {
-  content: url(../images/icon_send.svg);
-
+.btn-footer .icon-send {
+ 
+/* fill: #FFFFFF; */
   width: 24px;
   margin-left: 10px;
   background-size: contain;
-}
-
-.btn-footer:hover ::after,
-.btn-footer:focus ::after {
-  /* background-color: var(--primary-white-color); */
-  color: var(--accent-color);
-  fill: inherit;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .autor {
